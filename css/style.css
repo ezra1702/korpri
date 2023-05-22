@@ -1,0 +1,43 @@
+nav{
+     font-size: 20px;
+     opacity: 1;
+     font-weight: 1000;
+}
+.bg-biru{
+    background-color:#000080;
+}
+
+p{
+    font-size: 20px;
+}
+
+@media  (min-width: 700px) and (orientation: landscape) {
+    nav .nav-link{
+        position: relative;
+    }
+    nav .nav-link::after{
+        content: '';
+        opacity: 0;
+        transition: all 0.2s;
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 10px;
+    }
+    nav .nav-link:hover::after{
+        opacity: 0.3;
+    }
+    .rill-img{
+        height: 900px;
+    }
+    ol li{
+        margin-left: 100px;
+    }
+    .card-pres{
+        margin-left: 148px;
+        margin-top: 10px;
+    }
+}
