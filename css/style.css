@@ -10,7 +10,14 @@ nav{
 p{
     font-size: 20px;
 }
-
+.rill-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.c-cap{
+    margin-bottom: 80px;
+}
 @media  (min-width: 700px) and (orientation: landscape) {
     nav .nav-link{
         position: relative;
@@ -30,14 +37,18 @@ p{
     nav .nav-link:hover::after{
         opacity: 0.3;
     }
-    .rill-img{
-        height: 900px;
-    }
+  
     ol li{
         margin-left: 100px;
     }
     .card-pres{
         margin-left: 148px;
         margin-top: 10px;
+    }
+    .c-item{
+        height: 703px;
+    }
+    .c-cap{
+        margin-bottom: 260px;
     }
 }
